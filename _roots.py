@@ -101,7 +101,7 @@ def fixpt(f, x0, es100, imax=1000, tv=0, debug=False, tab=10):
     return xr
 #end fixpt()
 
-def newton(f, df, x0, es100, imax=1000, tv=0, debug=False, tab=10):
+def newton(f, df, x0, es100, imax=1000, tv=0, debug=True, tab=10):
     "locates single root using newton-raphson method"
     #f: function f(x)
     #df: f'(x) = derivative of f(x)
