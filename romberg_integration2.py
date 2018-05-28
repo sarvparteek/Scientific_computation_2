@@ -23,3 +23,6 @@ print("tv = {}".format(tv))
 #approx. value of integral of f(x) using romberg's algorithm
 av = _numinteq.romberg(f, x0, xn, es100=.5, tv=tv, debug=True)
 print("av = {}".format(av))
+
+et = (tv-av)/tv;
+print("et = {}".format(et));
