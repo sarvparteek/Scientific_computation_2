@@ -6,7 +6,8 @@ tf    = 5; % end time [s]
 dt    = [1e-5 1e-4 1e-3 1e-2 1e-1 1]; % s
 y0    = [1 0 0.01 0]; % Initial conditions
 K     = [-35 -34 -150 -34]; % Gains for full-state feedback. Stabilizes
-                            % all coordinates to zero
+                            % all coordinates to zero. Use LQR for linear
+                            % systems
 % K     = [0 -34 -150 -34]; % This stabilizes every coordinate but x to 0
 % K     = [0  0  -150 -34]; % This stabilizes every coordinate but x,xdot to 0
 
