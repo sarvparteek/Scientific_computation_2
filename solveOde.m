@@ -21,11 +21,13 @@ figure(fig_handle)
 subplot(2,2,1)
 plot(t,y(:,1))
 title(['x :' solver_str ',dt=' num2str(dt,6)])
+axis([0 5 1 7])
 grid on;
 
 subplot(2,2,2)
 plot(t,y(:,2))
 title(['x dot:' solver_str ',dt=' num2str(dt,6)])
+axis([0 5 0 2.5])
 grid on;
 
 subplot(2,2,3)
